@@ -1,0 +1,85 @@
+.chat-preview {
+  height: 65px;
+  cursor: pointer;
+}
+
+.chat-time,
+.chat-preview-message {
+  color: #768c9e;
+}
+
+.chat-preview-message,
+.chat-time {
+  font-size: 13px;
+}
+
+.chat-badge {
+  font-size: 14px;
+  width: 20px;
+  background-color: rgb(64, 130, 188);
+  border-radius: 50%;
+}
+
+.chat-title {
+  color: white;
+  margin-bottom: 0;
+}
+
+.chat-img {
+  background-size: cover;
+  background-position: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  align-self: flex-start;
+}
+
+.sarina-chat .chat-img {
+  background-image: url("../images/lady.jpg");
+}
+
+.tom-chat .chat-img {
+  background-image: url("../images/andrew-lincoln.jpg");
+  background-position: top;
+}
+
+.code-chat .chat-img {
+  background-image: url("../images/code.jpg");
+}
+
+.group-talker-preview {
+  color: rgb(64, 130, 188);
+}
+
+.friends-chat .chat-img {
+  background-image: url("../images/friends.jpg");
+}
+
+.skyNews-chat .chat-img {
+  background-image: url("../images/news.jpg");
+}
+
+.psychologyNews-chat .chat-img {
+  background-image: url("../images/psychology.jpg");
+}
+
+.python-chat .chat-img {
+  background-image: url("../images/python.jpg");
+}
+
+.college-chat .chat-img {
+  background-image: url("../images/college.jpg");
+}
+
+.micheal-chat .chat-img {
+  background-image: url("../images/micheal-c-hall.jpg");
+}
+
+.techNuggets-news .chat-img {
+  background-image: url("../images/technology.jpg");
+}
+
+.channel-icon,
+.groups-icon {
+  width: 15px;
+}

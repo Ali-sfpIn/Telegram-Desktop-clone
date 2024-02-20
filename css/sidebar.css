@@ -1,0 +1,57 @@
+.sidebar {
+  width: 320px;
+  height: 100%;
+  background-color: #17212b;
+  left: -100%;
+  transition: left 0.3s;
+  z-index: 1;
+}
+
+.box-shadow {
+  box-shadow: 0 0 20px 1250px #000000d4;
+}
+.user-img {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.sidebar-options {
+  list-style: none;
+  padding: 0;
+}
+
+.option:hover {
+  cursor: pointer;
+  background-color: rgb(37, 48, 62);
+}
+
+.telegram-desktop,
+.telegram-version {
+  color: #768c9e;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.telegram-desktop:hover,
+.telegram-version:hover {
+  text-decoration: underline;
+}
+.form-check-input:checked {
+  background-color: rgb(64, 130, 188);
+}
+
+.telegram-description {
+  margin-top: 200px;
+}
+
+.overlay {
+  position: fixed; /* Positioning and size */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.sidebar-shower {
+  left: 0;
+}

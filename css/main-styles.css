@@ -1,0 +1,176 @@
+/* night mode colors
+  darkblue color= 14, 22, 33
+  darkblue-light color= 62, 84, 106
+  message color= 23, 33, 43 
+  notification blue color = 64, 130, 188
+  active chat-groups light color also the sidebar hover = 37, 48, 62
+  sidebar-background-color= #17212B
+  overlay-color=  #070B11
+  */
+
+body {
+  background-color: rgb(14, 22, 33);
+}
+.chat-col,
+.all-chats-col,
+.chats-types-col {
+  height: 100vh;
+}
+.chat-col,
+.chats-types-col {
+  background-color: rgb(14, 22, 33);
+}
+.chat-col {
+  width: 75%;
+}
+.all-chats-col {
+  background-color: rgb(23, 33, 43);
+  width: 20%;
+}
+.chats-types-col {
+  width: 5%;
+}
+.top-bar {
+  background-color: rgb(62, 84, 106);
+  color: #768c9e;
+  width: 100%;
+  height: 20px;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.top-bar div {
+  cursor: pointer;
+}
+
+.tabs-icon {
+  width: 9px;
+  /* height: 10px; */
+}
+.default-chat-message {
+  margin-top: 30%;
+  background-color: rgb(30, 44, 58);
+  width: fit-content;
+  border-radius: 20px;
+}
+.top-bar-item,
+.chat-type-container,
+.menu-icon-container {
+  cursor: pointer;
+}
+.transition {
+  transition: all 0.3s;
+}
+.bi-x {
+  text-align: center;
+  padding-top: 2px;
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+.minus-container,
+.tabs-icon-container {
+  width: 15px;
+}
+.chat-type-icon {
+  width: 35px;
+}
+.menu-icon {
+  width: 20px;
+}
+.chat-type-text {
+  color: #768c9e;
+  font-size: 12px;
+}
+.folder-icon {
+  width: 75px;
+}
+.adjust-icon {
+  fill: #768c9e !important;
+}
+.chat-type-container {
+  width: 100%;
+  height: 75px;
+}
+.folder-container-icon {
+  width: 76px;
+  height: 67px;
+}
+.unread-container-icon {
+  height: 74px;
+}
+.active-icon {
+  fill: rgb(64, 130, 188) !important;
+}
+.active-text {
+  color: rgb(64, 130, 188);
+}
+.active-chat {
+  background-color: rgb(37, 48, 62);
+}
+
+.active-preview {
+  background-color: rgb(43, 82, 120) !important;
+  color: white;
+}
+
+.all-chats-badge {
+  top: 94px;
+}
+.personal-badge {
+  top: 168px;
+}
+.unread-badge {
+  top: 242px;
+}
+.groups-badge {
+  top: 380px;
+}
+.news-badge {
+  top: 447px;
+}
+.badge {
+  background-color: rgb(64, 130, 188);
+}
+.search-bar {
+  background-color: rgb(37, 48, 62);
+  border: none;
+  border-radius: 15px;
+  width: 95%;
+  padding-left: 20px;
+  height: 30px;
+  outline: none;
+  color: white;
+}
+.search-bar::placeholder {
+  padding: 4px;
+}
+
+.menu-icon-container {
+  width: 100%;
+  height: 80px;
+  padding-top: 20px;
+}
+
+p {
+  margin-bottom: 5px;
+}
+
+/* !hovers*/
+.bar-icon-container:hover {
+  background-color: red;
+  color: white;
+}
+.minus-container:hover,
+.tabs-icon-container:hover {
+  background-color: rgba(255, 255, 255, 0.184);
+}
+
+.menu-icon-container:hover {
+  background-color: rgb(37, 48, 62);
+}
+
+.chat-preview:hover {
+  background-color: rgb(37, 48, 62);
+  transition: all 0.3s;
+}
