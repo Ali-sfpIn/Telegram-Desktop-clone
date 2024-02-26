@@ -20,6 +20,7 @@
       defer
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     ></script>
+    <script defer src="js/data.js"></script>
     <script defer src="js/script.js"></script>
   </head>
   <body>
@@ -352,10 +353,10 @@
             <div class="d-flex flex-column">
               <h6 class="chat-title ms-2">
                 <img class="channel-icon" src="svg/channel-icon.svg" alt="" />
-                js challenges
+                Js Challenges
               </h6>
               <p class="chat-preview-message ms-2">
-                !آقا کوییک چلنج داریم دوباره
+                ...آقا دیدم سوال خیلی از بچه ها
               </p>
             </div>
             <div
@@ -375,8 +376,8 @@
                 برو بچ
               </h6>
               <p class="chat-preview-message ms-2">
-                <span class="group-talker-preview">roya: </span>استادش خیلی رو
-                مخه
+                <span class="group-talker-preview">sarah: </span> ...منم با این
+                استاده برداشتم
               </p>
             </div>
             <div
@@ -450,7 +451,7 @@
             <div class="d-flex flex-column">
               <h6 class="chat-title ms-2">
                 <img class="groups-icon" src="svg/groups-icon.svg" alt="" />
-                💔اصن یه وضعیه
+                💔میتینگ
               </h6>
               <p class="chat-preview-message ms-2">
                 <span class="group-talker-preview">Amir: </span>حال ندارم ناموسا
@@ -581,13 +582,12 @@
           <p class="default-message text-white text-center mx-auto px-2 d-none">
             select a chat to start messaging
           </p>
-          <div
-            class="default-chat-options d-flex flex-column justify-content-between"
-          >
+          <div class="chat-page d-flex flex-column justify-content-between">
             <div class="chat-status border-black border-start d-flex">
               <div class="ps-2 d-flex flex-column">
                 <p class="chat-name text-white">sarina♥</p>
                 <p class="last-visit">last seen recently</p>
+                <p class="channel-sub d-none">3,856 subscribers</p>
               </div>
               <div class="chat-icons my-auto ms-auto">
                 <i class="bi bi-search search-icon"></i>
@@ -596,8 +596,8 @@
                 <img class="three-dot-icon" src="svg/three-dots-icon.svg" />
               </div>
             </div>
-            <div class="chat py-2 d-flex flex-column align-items-between">
-              <div class="chat-start-time mx-auto text-white px-2 mb-auto">
+            <div class="chat py-4 d-flex flex-column align-items-between">
+              <!-- <div class="chat-start-time mx-auto text-white px-2 mb-auto">
                 2 february
               </div>
               <p class="received text-white p-2 d-flex">
@@ -641,7 +641,24 @@
               <p class="received text-white p-2 d-flex align-items-end">
                 شاید نیاز دارم دوباره ببینمت
                 <span class="message-time ps-1">11:59 pm</span>
-              </p>
+              </p> -->
+              <!-- <div class="card channel-message" style="width: 18rem">
+                <span class="post-signature p-1">Js Challenges</span>
+                <img src="images/js-challenges.jpg" class="card-img-top" />
+                <div class="card-body">
+                  <p class="card-text persian-text">
+                    خروجی کد بالا رو برامون بفرستین
+                  </p>
+                  <br />
+                  <a class="card-text post-links">
+                    Channel | Group | YouTube
+                  </a>
+                  <div class="post-details">
+                    <img class="eye-icon" src="svg/eye-icon.svg" alt="" />
+                    609 mehrshad, 12:22 pm
+                  </div>
+                </div>
+              </div> -->
             </div>
             <div class="bottom-options">
               <input
@@ -665,6 +682,7 @@
                 alt=""
               />
             </div>
+            <div class="def-inp p-2 text-center d-none">MUTE</div>
           </div>
         </div>
       </div>

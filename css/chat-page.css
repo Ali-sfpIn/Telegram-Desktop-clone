@@ -11,17 +11,22 @@ receive pm color= #222E3A
 }
 .last-visit,
 .telephone-icon,
-.search-icon {
+.search-icon,
+.channel-sub,
+.post-details,
+.send-message-inp::placeholder,
+.message-time {
   color: #768c9e;
 }
 
 .last-visit,
-.send-message-inp::placeholder {
+.send-message-inp::placeholder,
+.channel-sub {
   font-size: 14px;
 }
 
-.default-chat-options {
-  height: 737px;
+.chat-page {
+  height: 100%;
 }
 
 .chat-name {
@@ -41,12 +46,12 @@ receive pm color= #222E3A
 
 .send-message-inp::placeholder {
   padding: 5px;
-  color: #768c9e;
 }
 
 .bottom-options {
-  position: relative;
-  overflow: hidden;
+  width: 75%;
+  position: fixed;
+  bottom: 0;
 }
 
 .bottom-options img {
@@ -89,8 +94,13 @@ receive pm color= #222E3A
   max-width: 300px;
 }
 
-.received {
+.received,
+.card,
+.def-inp {
   background-color: #222e3a;
+}
+
+.received {
   border-radius: 10px 10px 10px 0;
   margin-left: 1px;
   width: fit-content;
@@ -102,12 +112,12 @@ receive pm color= #222E3A
 }
 
 .message-time {
-  color: #768c9e;
   text-wrap: nowrap;
 }
 
 .chat {
-  height: 90%;
+  height: 100%;
+  overflow: scroll;
 }
 
 .chat-start-time {
@@ -115,4 +125,61 @@ receive pm color= #222E3A
   width: fit-content;
   font-size: 12px;
   border-radius: 20px;
+}
+
+.card {
+  color: white;
+}
+
+.card-text {
+  font-size: 14px;
+}
+
+.card-body {
+  padding: 5px;
+}
+
+.post-details {
+  font-size: 12px;
+}
+
+.eye-icon {
+  width: 14px;
+}
+
+.double-tick-icon {
+  width: 18px;
+  height: fit-content;
+}
+
+.post-links,
+.def-inp {
+  color: #4082bc;
+}
+
+.def-inp {
+  background-color: rgb(23, 33, 43);
+}
+
+.channel-message {
+  border-radius: 10px 10px 10px 0;
+  margin-left: 1px;
+}
+
+/* .def {
+  width: 20px;
+  margin-top: 20px;
+} */
+
+.default-message {
+  margin-top: 30%;
+  background-color: rgb(37, 48, 62);
+  width: fit-content;
+  border-radius: 20px;
+}
+/* !hover*/
+.def-inp:hover {
+  background-color: rgb(37, 48, 62);
+  transition: all 0.3s;
+  cursor: pointer;
 }
