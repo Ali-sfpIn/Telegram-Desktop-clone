@@ -166,20 +166,107 @@ receive pm color= #222E3A
   margin-left: 1px;
 }
 
-/* .def {
-  width: 20px;
-  margin-top: 20px;
-} */
-
 .default-message {
   margin-top: 30%;
   background-color: rgb(37, 48, 62);
   width: fit-content;
   border-radius: 20px;
 }
+
+.group-person-img {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.amir-img {
+  background-image: url("../images/amir.jpg");
+}
+
+.mohammad-img {
+  background-image: url("../images/mohammad.jpg");
+}
+
+.mary-img {
+  background-image: url("../images/mary.jpg");
+}
+
+.reza-img {
+  background-image: url("../images/reza.jpg");
+}
+
+.sarah-img {
+  background-image: url("../images/sarah.jpg");
+}
+
+.sonia-img {
+  background-image: url("../images/sonia.jpg");
+}
+
+.hossein-img {
+  background-image: url("../images/hossein.jpg");
+}
+
+.sorena-img {
+  background-image: url("../images/sorena.jpg");
+}
+
+.maryam-img {
+  background-image: url("../images/maryam.jpg");
+}
+
+.group-message-container {
+  width: fit-content;
+}
+
+.group-message {
+  font-size: 12px;
+  border-radius: 10px 10px 10px 0;
+  background-color: #222e3a;
+}
+
+.group-message-time {
+  color: #768c9e;
+}
+
+.group-person-name {
+  font-size: 14px;
+  color: #66c2bd;
+}
+
+.replied-message-container {
+  background-color: #243233;
+  border-left: 5px solid #408c88;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.reply-message-name {
+  color: #408c88;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: #222a35;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #4d565f;
+  border-radius: 10px;
+}
+
 /* !hover*/
 .def-inp:hover {
-  background-color: rgb(37, 48, 62);
+  background-color: #222a35;
   transition: all 0.3s;
   cursor: pointer;
 }

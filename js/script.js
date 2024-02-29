@@ -30,7 +30,6 @@ const classRemover = function (target, oldClass) {
 };
 
 const chatStartTimeRender = function (time) {
-  console.log(time);
   const chatStartTime = `
       <div class="chat-start-time mx-auto text-white px-2 mb-auto">
         ${time}
@@ -73,11 +72,11 @@ const channelPostRender = function (data) {
   chatStartTimeRender(data.starterTime);
   Object.entries(data.posts).forEach((post) => {
     const html = `
-      <div class="card post mt-1" style="width: 18rem">
+      <div class="card post mt-1 ms-1" style="width: 18rem">
       <span class="post-signature p-1">${post[1].postSignature}</span>
       <img src="images/${post[1].postImgSrc}" />
       <div class="card-body">
-        <p class="card-text persian-text text-end">
+        <p class="card-text persian-text">
           ${post[1].postText}
         </p>
         <br />
@@ -94,6 +93,46 @@ const channelPostRender = function (data) {
   });
   defaultMarginBottomManager();
   chatTitleHandler(data.channelName);
+};
+
+const groupMessageRender = function (data) {
+  chatStartTimeRender(data.starterTime);
+  Object.values(data.messages).forEach((message) => {
+    if (message.reply) {
+      const repliedMessage = `
+      <div class="group-message-container mary-g-message replied d-flex my-1 flex-row align-items-end">
+      <span class="group-person-img ${message.message[1]}-img me-1"></span>
+      <div style="background-color: #222e3a;border-radius: 5px 5px 5px 0;
+      ">
+        <div class="group-person-name ${message.message[1]}-name p-2">${message.message[1]}</div>
+        <div class="replied-message-container ms-2 ps-2 d-flex flex-column">
+          <span class="reply-message-name">${message.reply[1]}</span>
+          <p class="replied-message text-white px-1">
+            ${message.reply[0]}
+          </p>
+        </div>
+        <div class="group-message d-flex justify-content-end ms-1 text-white p-2">
+          <p>${message.message[0]}</p>
+          <span class="group-message-time ps-1">${message.message[2]}</span>
+        </div>
+      </div>
+    </div>
+  `;
+      chat.insertAdjacentHTML("beforeend", repliedMessage);
+    }
+    if (message.reply) return;
+    const simpleMessage = `
+      <div class="group-message-container align-items-end sarah-g-message d-flex my-1">
+      <span class="group-person-img ${message[1]}-img"></span>
+      <div class="group-message ms-1 text-white p-2">
+        <div class="group-person-name ${message[1]}-name">${message[1]}</div>
+        <p>${message[0]}</p>
+        <span class="group-message-time ms-1">${message[2]}</span>
+      </div>
+    </div>
+  `;
+    chat.insertAdjacentHTML("beforeend", simpleMessage);
+  });
 };
 
 const defaultMarginBottomManager = function () {
@@ -165,4 +204,4 @@ previewContainer.addEventListener("click", function (e) {
   chatHandler(chatTitle.textContent);
 });
 
-personalChatRender(messages.personal.amir);
+groupMessageRender(messages.groups.میتینگ);

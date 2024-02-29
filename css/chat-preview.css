@@ -11,6 +11,7 @@
 .chat-preview-message,
 .chat-time {
   font-size: 13px;
+  text-wrap: nowrap;
 }
 
 .chat-badge {
